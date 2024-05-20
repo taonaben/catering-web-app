@@ -62,7 +62,7 @@ section:nth-child(even){
     letter-spacing: .1rem;
 }
 
-header{
+/* header{
     position:fixed;
     top:0; left: 0; right: 0;
     background: #fff;
@@ -82,9 +82,9 @@ header .logo{
 
 header .logo i{
     color: var(--violet);
-}
+} */
 
-header .navbar a{
+/* header .navbar a{
     font-size: 1.7rem;
     border-radius: .5rem;
     padding: .5rem 1.5rem;
@@ -95,7 +95,7 @@ header .navbar a.active,
 header .navbar a:hover{
     color: black;
     background: violet;
-}
+} */
 
 header .icons i,
 header .icons a{
@@ -232,6 +232,10 @@ header .icons #menu-bars{
     position: relative;
     overflow: hidden;
     text-align: center;
+}
+.dishes .box-container .box .deco{
+    height: 200px;
+    width: auto;
 }
 
 .dishes .box-container .box .fa-heart,
@@ -705,7 +709,7 @@ section{
         display: inline-block;
     }
 
-    header .navbar{
+    /* header .navbar{
         position: absolute;
         top: 100%; left: 0; right: 0;
         background: #fff;
@@ -724,7 +728,7 @@ section{
         margin: 1rem;
         font-size: 2rem;
         background: #eee;
-    }
+    } */
 
     #search-form #search-box{
         width: 90%;
