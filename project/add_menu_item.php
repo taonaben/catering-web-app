@@ -52,7 +52,7 @@ if(isset($_POST['add'])){
 </head>
 <body>
    
-<?php include 'components/header.php'; ?>
+<?php include 'components/header.php'?>
 
 <section class="product-form">
 

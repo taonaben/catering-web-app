@@ -1,7 +1,7 @@
 <header class="header">
 
    <section class="flex">
-      <a href="#" class="logo"><i class="fas fa-utensils"></i>Tayamika Catering</a>
+      <a href="index.php" class="logo"><i class="fas fa-utensils"></i>Tayamika Catering</a>
 
       <nav class="navbar">
          <a href="add_menu_item.php">Add menu item</a>

@@ -22,7 +22,7 @@ if (isset($_COOKIE['user_id'])) {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <!-- <link rel="stylesheet" href="css/index_style.css"> -->
+    <link rel="stylesheet" href="css/index_style.css">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -50,7 +50,7 @@ if (isset($_COOKIE['user_id'])) {
         </div>
 
     </header> -->
-    <?php include 'components/home_header.php'; ?>
+    <?php include 'components/header.php'?>
 
     <!--header section ends-->
 
@@ -77,7 +77,7 @@ if (isset($_COOKIE['user_id'])) {
                         <span>Welcome to</span>
                         <h3>Tayamika Catering</h3>
                         <p>where customer satisfaction, and hunger sating is what we do best!</p>
-                        <a href="#" class="btn">book our services now!</a>
+                        <a href="view_menu.php" class="btn">book our services now!</a>
                     </div>
 
                     <div class="image">
@@ -130,118 +130,19 @@ if (isset($_COOKIE['user_id'])) {
 
     <section class="dishes" id="dishes">
 
-        <h3 class="sub-heading">decorations we offer for our catering services</h3>
-        <h1 class="heading">popular decorations our customers use</h1>
+        <h3 class="sub-heading">dishes we offer from our catering services</h3>
+        <h1 class="heading">popular dishes our customers prefer</h1>
 
         <div class="box-container">
 
-            <div class="box">
+            <img src="./Catering pics/food1.jpg" class="box" alt="">
+            <img src="./Catering pics/food2.jpg" class="box" alt="">
+            <img src="./Catering pics/food3.jpg" class="box" alt="">
+            <img src="./Catering pics/food4.jpg" class="box" alt="">
+            <img src="./Catering pics/food5.jpg" class="box" alt="">
+            <img src="./Catering pics/food6.jpg" class="box" alt="">
 
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
-                <img src="Catering pics/deco10.png" alt="">
-                <h3>professional looking food</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <span>$5 per head</span>
-                <a href="#" class="btn">add to cart</a>
-
-            </div>
-
-            <div class="box">
-
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
-                <img src="Catering pics/deco11.png" alt="" class="deco">
-                <h3>professional looking food</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <span>$5 per head</span>
-                <a href="#" class="btn">add to cart</a>
-
-            </div>
-
-            <div class="box">
-
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
-                <img src="Catering pics/deco12.png" alt="">
-                <h3>professional looking food</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <span>$5 per head</span>
-                <a href="#" class="btn">add to cart</a>
-
-            </div>
-
-            <div class="box">
-
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
-                <img src="Catering pics/deco13.png" alt="">
-                <h3>professional looking food</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <span>$5 per head</span>
-                <a href="#" class="btn">add to cart</a>
-
-            </div>
-
-            <div class="box">
-
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
-                <img src="Catering pics/deco14.png" alt="">
-                <h3>professional looking food</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <span>$5 per head</span>
-                <a href="#" class="btn">add to cart</a>
-
-            </div>
-
-            <div class="box">
-
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
-                <img src="Catering pics/deco15.png" alt="">
-                <h3>professional looking food</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <span>$5 per head</span>
-                <a href="#" class="btn">add to cart</a>
-
-            </div>
+            
 
         </div>
 
@@ -735,7 +636,7 @@ if (isset($_COOKIE['user_id'])) {
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <script src="js/script.js"></script>
+    <script src="js/index_script.js"></script>
 
 
 </body>
