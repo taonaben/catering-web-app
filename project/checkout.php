@@ -103,22 +103,22 @@ if(isset($_POST['place_order'])){
                   <option value="net banking">net banking</option>
                   <option value="UPI or wallets">UPI or RuPay</option>
                </select>
-               <p>address type <span>*</span></p>
+               <p>event type <span>*</span></p>
                <select name="address_type" class="input" required> 
-                  <option value="home">home</option>
-                  <option value="office">office</option>
+                  <option value="indoors">indoors</option>
+                  <option value="outdoors">outdoors</option>
                </select>
             </div>
             <div class="box">
-               <p>address line 01 <span>*</span></p>
+               <p>address1 <span>*</span></p>
                <input type="text" name="flat" required maxlength="50" placeholder="e.g. flat & building number" class="input">
-               <p>address line 02 <span>*</span></p>
-               <input type="text" name="street" required maxlength="50" placeholder="e.g. street name & locality" class="input">
+               <p>event type <span>*</span></p>
+               <input type="text" name="street" required maxlength="50" placeholder="e.g. wedding, birthday party" class="input">
                <p>city name <span>*</span></p>
                <input type="text" name="city" required maxlength="50" placeholder="enter your city name" class="input">
                <p>country name <span>*</span></p>
                <input type="text" name="country" required maxlength="50" placeholder="enter your country name" class="input">
-               <p>pin code <span>*</span></p>
+               <p>number of guests <span>*</span></p>
                <input type="number" name="pin_code" required maxlength="6" placeholder="e.g. 123456" class="input" min="0" max="999999">
             </div>
          </div>

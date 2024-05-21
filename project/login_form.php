@@ -35,10 +35,10 @@ if (isset($_POST['submit'])) {
 
             // Redirect based on user_type
             if ($row['user_type'] == 'manager') {
-                header('Location: ./view_menu.php');
+                header('Location: ./manager_dashboard.php');
                 exit;
             } elseif ($row['user_type'] == 'chef') {
-                header('Location: ./view_menu.php');
+                header('Location: ./manager_dashboard.php');
                 exit;
             } else {
                 echo "Unknown user type."; // Remove this after testing

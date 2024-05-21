@@ -89,6 +89,17 @@ section{
    border-radius: .5rem;
 }
 
+.user-section-container {
+   max-height: 500px; /* Set the maximum height */
+   overflow-y: auto; /* Enable vertical scrollbar if content overflows */
+   padding-right: 20px; /* Add right padding to prevent content from overlapping scrollbar */
+}
+
+.user-section {
+   margin-bottom: 20px; /* Add margin between user sections */
+}
+
+
 .btn{
    background-color: var(--main-color);
 }

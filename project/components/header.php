@@ -4,7 +4,6 @@
       <a href="index.php" class="logo"><i class="fas fa-utensils"></i>Tayamika Catering</a>
 
       <nav class="navbar">
-         <a href="add_menu_item.php">Add menu item</a>
          <a href="view_menu.php">Menu</a>
          <a href="orders.php">my orders</a>
          <?php
