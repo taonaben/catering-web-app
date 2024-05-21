@@ -60,7 +60,7 @@ if(isset($_POST['add'])){
       <h3>product info</h3>
       <p>product name <span>*</span></p>
       <input type="text" name="name" placeholder="enter product name" required maxlength="50" class="box">
-      <p>product price <span>*</span></p>
+      <p>product price/ dish <span>*</span></p>
       <input type="number" name="price" placeholder="enter product price" required min="0" max="9999999999" maxlength="10" class="box">
       <p>product image <span>*</span></p>
       <input type="file" name="image" required accept="image/*" class="box">

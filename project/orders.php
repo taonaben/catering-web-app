@@ -52,7 +52,7 @@ if (isset($_COOKIE['user_id'])) {
                            <p class="date"><i class="fa fa-calendar"></i><span><?= $fetch_order['date']; ?></span></p>
                            <img src="uploaded_files/<?= $fetch_product['image']; ?>" class="image" alt="">
                            <h3 class="name"><?= $fetch_product['name']; ?></h3>
-                           <p class="price"><i class="fas fa-indian-rupee-sign"></i> <?= $fetch_order['price']; ?> x <?= $fetch_order['qty']; ?></p>
+                           <p class="price"><i class="bi bi-currency-dollar"></i>$ <?= $fetch_order['price']; ?> x <?= $fetch_order['qty']; ?></p>
                            <p class="status" style="color:<?php if ($fetch_order['status'] == 'delivered') {
                                                                echo 'green';
                                                             } elseif ($fetch_order['status'] == 'canceled') {

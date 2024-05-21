@@ -48,7 +48,7 @@ if (isset($_POST['add_to_cart'])) {
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>View Products</title>
+   <title>View Menu</title>
 
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
@@ -62,7 +62,7 @@ if (isset($_POST['add_to_cart'])) {
    <?php include 'components/admin_header.php' ?>
    <section class="products">
 
-      <h1 class="heading">all products</h1>
+      <h1 class="heading">Menu</h1>
 
       <div class="box-container">
 
@@ -77,11 +77,11 @@ if (isset($_POST['add_to_cart'])) {
                   <h3 class="name"><?= $fetch_prodcut['name'] ?></h3>
                   <input type="hidden" name="product_id" value="<?= $fetch_prodcut['id']; ?>">
                   <div class="flex">
-                     <p class="price"><i class="fas fa-indian-rupee-sign"></i><?= $fetch_prodcut['price'] ?></p>
-                     <input type="number" name="qty" required min="1" value="1" max="99" maxlength="2" class="qty">
+                     <p class="price"><i class="bi bi-currency-dollar"></i>$ <?= $fetch_prodcut['price'] ?></p>
+                     <!-- <input type="number" name="qty" required min="1" value="1" max="99" maxlength="2" class="qty"> -->
                   </div>
-                  <input type="submit" name="add_to_cart" value="add to cart" class="btn">
-                  <a href="checkout.php?get_id=<?= $fetch_prodcut['id']; ?>" class="delete-btn">buy now</a>
+                  <!-- <input type="submit" name="add_to_cart" value="add to cart" class="btn"> -->
+                  <!-- <a href="checkout.php?get_id=<?= $fetch_prodcut['id']; ?>" class="delete-btn">buy now</a> -->
                </form>
          <?php
             }

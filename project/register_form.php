@@ -28,9 +28,9 @@ if (isset($_POST['submit'])) {
             if (mysqli_query($conn, $insert_query)) {
                 // Registration successful, redirect based on user_type
                 if ($user_type == 'manager') {
-                    header('location:view_order.php');
+                    header('Location: ./view_admin_menu.php');
                 } elseif ($user_type == 'chef') {
-                    header('location:view_order.php');
+                    header('Location: ./view_admin_menu.php');
                 }
                 exit; // Make sure to exit after redirection
             } else {
@@ -75,19 +75,19 @@ if (isset($_POST['submit'])) {
     <div class="form-container">
 
    <form action="" method="post">
-      <h3>register now</h3>
+      <h3>New Employee</h3>
     
-      <input type="text" name="name" required placeholder="enter your name">
-      <input type="email" name="email" required placeholder="enter your email">
-      <input type="phone number" name="phone_number" required placeholder="enter your phone number(+263)">
-      <input type="password" name="password" required placeholder="enter your password">
-      <input type="password" name="cpassword" required placeholder="confirm your password">
+      <input type="text" name="name" required placeholder="enter name">
+      <input type="email" name="email" required placeholder="enter email">
+      <input type="phone number" name="phone_number" required placeholder="enter phone number(+263)">
+      <input type="password" name="password" required placeholder="enter password">
+      <input type="password" name="cpassword" required placeholder="confirm password">
       <select name="user_type">
          <option value="manager">Manager</option>
          <option value="chef">Chef</option>
       </select>
       <input type="submit" name="submit" value="register now" class="form-btn">
-      <p>already have an account? <a href="login_form.php">login now</a></p>
+      
    </form>
 
 </div>

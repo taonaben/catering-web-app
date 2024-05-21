@@ -38,7 +38,7 @@ if (isset($_POST['submit'])) {
                 header('Location: ./manager_dashboard.php');
                 exit;
             } elseif ($row['user_type'] == 'chef') {
-                header('Location: ./manager_dashboard.php');
+                header('Location: ./chef_dashboard.php');
                 exit;
             } else {
                 echo "Unknown user type."; // Remove this after testing
@@ -86,9 +86,8 @@ if (isset($_POST['submit'])) {
             <input type="email" name="email" required placeholder="enter your email">
             <input type="password" name="password" required placeholder="enter your password">
             <input type="submit" name="submit" value="login now" class="form-btn">
-            <p>don't have an account? <a href="register_form.php">register now</a></p>
         </form>
     </div>
 </body>
 
-</html>
+</html
